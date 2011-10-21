@@ -33,7 +33,6 @@ public class LoggingHandlerMethodInterceptor extends HandlerInterceptorAdapter {
 
 	private static Logger logger = LoggerFactory.getLogger(LoggingHandlerMethodInterceptor.class);
 
-	// TODO
 	private final ParameterNameDiscoverer parameterNameDiscoverer = new LocalVariableTableParameterNameDiscoverer();
 
 	@Override

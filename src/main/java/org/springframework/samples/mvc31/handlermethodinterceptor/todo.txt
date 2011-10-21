@@ -1,1 +1,0 @@
-https://github.com/SpringSource/spring-data-document-examples/blob/master/mongodb-myrestaurants-analytics/src/main/java/org/springframework/data/document/analytics/MvcEvent.java
