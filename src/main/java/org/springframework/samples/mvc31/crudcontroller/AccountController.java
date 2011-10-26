@@ -84,7 +84,7 @@ public class AccountController {
 	// The account is loaded from the "account" URI variable via {@link AccountConverter}.
 
 	@RequestMapping(value="/{account}", method = RequestMethod.DELETE)
-	public String delete(@PathVariable Account account, BindingResult result) {
+	public String delete(@PathVariable Account account) {
 		this.accountManager.delete(account);
 		return "redirect:../accounts";
 	}
