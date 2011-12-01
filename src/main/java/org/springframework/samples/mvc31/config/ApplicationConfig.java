@@ -18,14 +18,13 @@ package org.springframework.samples.mvc31.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.samples.mvc31.crudcontroller.AccountManager;
 import org.springframework.samples.mvc31.crudcontroller.StubAccountManager;
 
 @Configuration
-@ComponentScan(basePackages = "org.springframework.samples.mvc31", excludeFilters = { @Filter(Configuration.class) })
+@ComponentScan(basePackages = "org.springframework.samples.mvc31")
 @ImportResource("classpath:org/springframework/samples/mvc31/config/security.xml")
 public class ApplicationConfig {
 

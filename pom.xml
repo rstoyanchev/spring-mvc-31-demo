@@ -9,7 +9,7 @@
 
 	<properties>
 		<java-version>1.6</java-version>
-		<org.springframework-version>3.1.0.BUILD-SNAPSHOT</org.springframework-version>
+		<org.springframework-version>3.1.0.RC2</org.springframework-version>
 		<org.slf4j-version>1.6.1</org.slf4j-version>
 	</properties>
 
@@ -135,6 +135,14 @@
 			<version>4.8</version>
 			<scope>test</scope>
 		</dependency>
+
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <scope>test</scope>
+            <version>2.5.1</version>
+        </dependency>
+        
 	</dependencies>
 
 	<repositories>
