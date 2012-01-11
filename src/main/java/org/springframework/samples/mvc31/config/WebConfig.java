@@ -107,14 +107,12 @@ public class WebConfig extends WebMvcConfigurationSupport {
 	
 	@Override
 	public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> exceptionResolvers) {
-		exceptionResolvers.add(customExceptionResolver());
+		ExtendedExceptionHandlerExceptionResolver customResolver = new ExtendedExceptionHandlerExceptionResolver();
+		customResolver.setExceptionHandler(new GlobalExceptionHandler());
+		customResolver.setMessageConverters(getMessageConverters());
+		customResolver.afterPropertiesSet();
+
+		exceptionResolvers.add(customResolver);
 	}
 
-	@Bean 
-	public ExceptionHandlerExceptionResolver customExceptionResolver() {
-		ExtendedExceptionHandlerExceptionResolver exceptionResolver = new ExtendedExceptionHandlerExceptionResolver();
-		exceptionResolver.setExceptionHandler(new GlobalExceptionHandler());
-		return exceptionResolver;
-	}
-	
 }
