@@ -1,6 +1,6 @@
 [[test]]
 # Test
-:toc: preamble
+:toc: left
 :toclevels: 4
 :docinfo1:
 
