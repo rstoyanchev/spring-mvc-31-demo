@@ -10,7 +10,7 @@
 	<properties>
 		<java-version>1.6</java-version>
 		<org.springframework-version>3.1.0.RELEASE</org.springframework-version>
-		<org.springframework.security-version>3.0.5.RELEASE</org.springframework.security-version>
+		<org.springframework.security-version>5.2.10.RELEASE</org.springframework.security-version>
 		<org.slf4j-version>1.6.1</org.slf4j-version>
 	</properties>
 
